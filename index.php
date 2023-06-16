@@ -16,3 +16,10 @@ if(array_key_exists($uri, $routes)) {
     http_response_code(404);
     require 'views/404page.php';
 }
+
+
+public function dd($value) {
+    echo "<pre>";
+    var_dump($value);
+    echo "</pre>";
+}
